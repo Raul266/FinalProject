@@ -13,6 +13,13 @@ class LoginPage(BasePage):
     SEARCH = (By.XPATH, "//*[@id='menuSearch'][1]")
     VIEW = (By.XPATH, '//*[@id="output"]/div/div[2]/a[1]')
     SEARCH_BOX = (By.XPATH, "//*[@id='autoComplete']")
+    ITEM_TABLETS = (By.XPATH,"//span[@id = 'tabletsTxt']")
+    BUY_NOW = (By.XPATH, "//button[@name = 'buy_now']")
+    ADD_TO_CART =(By.XPATH,"//button[@name = 'save_to_cart']")
+    CART = (By.CSS_SELECTOR, "svg[id='menuCart']")
+    PRODUCT_TEXT =(By.XPATH,"//label[@translate = 'PRODUCT_NAME']")
+    REMOVE_ITEM = (By.XPATH, "//*[@id='product']/td[3]/div/div")
+    EMPTY_CART_TEXT = (By.XPATH,"//*[@id='shoppingCart']/div/label")
     URL = "https://www.advantageonlineshopping.com/#/"
 
     def good_login(self, username, password):

@@ -18,4 +18,4 @@ Feature:  search feature
     Then products: I verify if I found laptop on the site
 
     # test 1: test search tablets
-    # test 1: test search laptop
+    # test 2: test search laptop

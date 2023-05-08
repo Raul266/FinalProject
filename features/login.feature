@@ -40,6 +40,7 @@ Feature: Login feature
       | raul     | raul     |
 
 
-      # test 1: login with invalid username
-      # test 2: login with invalid credentials (parametrizat, mai multe valori)
-      # test 3: login without empty username/password (parametrizat, mai multe valori)
+      # test 1: login with valid username
+      # test 2: login with invalid pass
+      # test 3: login with invalid username
+      # test 4: login with invalid credentials

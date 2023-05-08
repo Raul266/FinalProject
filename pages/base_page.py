@@ -25,7 +25,6 @@ class BasePage:
             EC.text_to_be_present_in_element((by, selector), "Incorrect user name or password."))
 
     def wait_site(self):
-        WebDriverWait(self.driver,5).until(EC.url_changes('https://www.advantageonlineshopping.com/#/'))
         self.driver.implicitly_wait(5)
 
     def get_url(cls):
