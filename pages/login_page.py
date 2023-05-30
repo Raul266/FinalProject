@@ -20,7 +20,7 @@ class LoginPage(BasePage):
     PRODUCT_TEXT =(By.XPATH,"//label[@translate = 'PRODUCT_NAME']")
     REMOVE_ITEM = (By.XPATH, "//*[@id='product']/td[3]/div/div")
     EMPTY_CART_TEXT = (By.XPATH,"//*[@id='shoppingCart']/div/label")
-    SYMBOL = (By.CSS_SELECTOR,"svg[id='menuHelp']")
+    SYMBOL = (By.XPATH,'//*[@id="menuHelp"]')
     VERSION = (By.XPATH,'//*[@id="helpMiniTitle"]/label[2]')
     NR_VERSION = (By.XPATH, "//a[@class = 'release_version ng-binding']")
     ABOUT = (By.XPATH, '//*[@id="helpMiniTitle"]/label[1]')

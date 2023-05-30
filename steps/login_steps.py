@@ -1,7 +1,6 @@
 from behave import *
 from hamcrest import assert_that, equal_to
 
-
 @given('login: the user is on the login page')
 def step_impl(context):
     context.login_page.navigate_to_page()
@@ -12,8 +11,8 @@ def step_impl(context,username,password):
 
 @then('login: the user is on the home page')
 def step_impl(context):
-    assert_that(context.login_page.driver.current_url, equal_to("https://www.advantageonlineshopping.com/#/"))
-
+    assert_that(context.login_page.driver.current_url,
+                equal_to("https://www.advantageonlineshopping.com/#/"))
 
 @when('login: user  enters incorrect password  and clicks login')
 def step_impl(context):

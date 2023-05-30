@@ -1,4 +1,3 @@
-
 ● pip install behave (o librărie bdd care vă interpreta și rula testele scrise în gherkin)
 ● pip install behave-html-formatter (ne ajută să generăm rapoarte bdd)
 ● pip install selenium
