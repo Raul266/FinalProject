@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-    LOGIN = (By.XPATH, "//a[@id='hrefUserIcon']")
+    LOGIN_icon = (By.XPATH, "//a[@id='hrefUserIcon']")
     USERNAME_INPUT = (By.XPATH, "//input[@name='username']")
     PASSWORD_INPUT = (By.XPATH, "//input[@name='password']")
     LOGIN_BTN = (By.XPATH, "//button[@type ='button']")
@@ -27,7 +27,7 @@ class LoginPage(BasePage):
     URL = "https://www.advantageonlineshopping.com/#/"
 
     def good_login(self, username, password):
-        self.wait_and_click(*self.LOGIN)
+        self.wait_and_click(*self.LOGIN_icon)
         self.wait(*self.USERNAME_INPUT)
         self.fill_input(*self.USERNAME_INPUT, username)
         self.wait(*self.PASSWORD_INPUT)
@@ -36,7 +36,7 @@ class LoginPage(BasePage):
         self.wait_and_click(*self.LOGIN_BTN)
 
     def bad_login(self, username, password):
-        self.wait_and_click(*self.LOGIN)
+        self.wait_and_click(*self.LOGIN_icon)
         self.wait(*self.USERNAME_INPUT)
         self.fill_input(*self.USERNAME_INPUT, username)
         self.wait(*self.PASSWORD_INPUT)
