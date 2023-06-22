@@ -10,5 +10,6 @@ class Search(LoginPage):
         self.wait(*self.SEARCH)
         self.fill_input(*self.SEARCH_BOX, query)
         self.wait(*self.VIEW)
+        time.sleep(1)
         self.wait_and_click(*self.VIEW)
         self.wait_site()
