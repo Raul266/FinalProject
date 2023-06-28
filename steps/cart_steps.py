@@ -15,6 +15,6 @@ def step_impl(context):
 @when('home: I click and I remove an item from my cart')
 def step_impl(context):
     context.cart_page.remove_from_cart()
-@then('products: I check if I have removed an item in my cart')
+@then('products: I check if I removed an item from my cart')
 def step_impl(context):
     assert_that(context.cart_page.empty_cart_text(), equal_to('Your shopping cart is empty'))
